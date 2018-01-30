@@ -57,7 +57,7 @@ apt-get -y install supervisor || (echo "Failed to install supervisor." ; exit)
 
 #install grunt & npm modules
 npm --version
-( cd ${DIR}/.. ; npm install -g grunt-cli --unsafe-perm ; sudo su - -c "cd ${DIR}/.. ; npm install --unsafe-perm" )
+( npm install -g grunt-cli --unsafe-perm ; sudo su - -c "cd ${DIR}/.. ; npm install --unsafe-perm" )
 
 #install mongodb
 #bash $DIR/scripts/mongodb.install.sh
