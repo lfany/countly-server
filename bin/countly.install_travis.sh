@@ -56,7 +56,7 @@ apt-get -y install supervisor || (echo "Failed to install supervisor." ; exit)
 #apt-get -y install sendmail
 
 #install grunt & npm modules
-( sudo su -; cd $DIR/.. ; npm install -g grunt-cli --unsafe-perm ; npm install --unsafe-perm )
+( sudo su - -c "cd ${DIR}/.. ; npm install -g grunt-cli --unsafe-perm ; npm install --unsafe-perm" )
 
 #install mongodb
 #bash $DIR/scripts/mongodb.install.sh
