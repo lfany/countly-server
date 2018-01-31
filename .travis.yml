@@ -1,5 +1,5 @@
 language: nodejs
-node_js: "6"
+node_js: "8"
 services:
   - mongodb
 env:
